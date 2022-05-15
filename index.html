@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collector</title>
+
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <form action="#" id="signInForm">
+        <div>
+            <label>First name</label>
+            <input type="text" data-field="first_name">
+        </div>
+        <div>
+            <label>Last name</label>
+            <input type="text" data-field="last_name">
+        </div>
+        <div>
+            <label>Father name</label>
+            <input type="text" data-field="father_name">
+        </div>
+        <div>
+            <label>University</label>
+            <input type="text" data-field="university">
+        </div>
+        <div>
+            <label>Gender</label>
+            <select data-field="gender">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div>
+            <label>Payment type</label>
+            <label>
+                <input type="radio" name="payment" data-field="payment" value="paypal" checked> PayPal
+            </label>
+            <label>
+                <input type="radio" name="payment" data-field="payment" value="visa"> Visa
+            </label>
+        </div>
+        <div>
+            <button type="submit" id="saveButton">Save</button>
+            <button type="button" id="loadButton">Load</button>
+        </div>
+    </form>
+</body>
+
+</html>
